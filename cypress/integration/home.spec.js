@@ -1,6 +1,8 @@
+import HomePage from '../pages/homePage'
+
 describe('Home page', ()=> {
     it('Launch the home page', () =>{
-        cy.visit('http://opencart.abstracta.us/')
-        cy.get('#logo a').should('have.text', 'Your Store')
+        var homePage = new HomePage();
+        homePage.go()
     })
 })
