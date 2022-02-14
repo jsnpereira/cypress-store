@@ -8,4 +8,4 @@ class HomePage {
 
 }
 
-export default HomePage;
+export default new HomePage;

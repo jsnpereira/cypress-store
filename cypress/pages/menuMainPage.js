@@ -7,4 +7,4 @@ class MenuMainPage {
     }
 }
 
-export default MenuMainPage;
+export default new MenuMainPage;

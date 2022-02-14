@@ -10,4 +10,4 @@ class AccountCreatedPage {
     }
 }
 
-export default AccountCreatedPage;
+export default new AccountCreatedPage;
