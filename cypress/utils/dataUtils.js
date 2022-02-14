@@ -11,4 +11,4 @@ class DataUtils {
     }
 }
 
-export default DataUtils;
+export default new DataUtils;

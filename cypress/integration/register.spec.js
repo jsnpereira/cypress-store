@@ -2,38 +2,25 @@ import homePage from '../pages/homePage'
 import menuMainPage from '../pages/menuMainPage'
 import registerAccountPage from '../pages/registerAccountPage'
 import accountCreatedPage from '../pages/accountCreatedPage'
-import DataUtils from '../utils/dataUtils'
+import dataUtils from '../utils/dataUtils'
 
-describe('Create new register', ()=> {
-   
-    it('Launch the home page', () =>{
-        homePage.go()
+describe('Register', ()=> {
+
+    beforeEach(function () {
+        cy.fixture('user').then((item) => {
+           this.user = item
+        })
     })
-
-    it('Go to new register page', () =>{
+    it('Create new register', function (){
+        homePage.go()
         menuMainPage.registerButton()
         registerAccountPage.checkAccountPageIsDisplayed();
-    })
 
+        this.user.signup.email = this.user.signup.email.replace("{VALUE}", dataUtils.randomString(10))
 
-    it('Type on the form fields', () =>{
-        var dataUtils = new DataUtils()
-        var emailRandom = dataUtils.randomString(10);
-
-        var user = {
-            firstName: 'Jeison',
-            lastName: 'Pereira',
-            email: emailRandom + '@yopmail.com',
-            telephone : '5199999999',
-            password: '@Bcd1234'
-        }
-
-        registerAccountPage.fillAllFields(user)
+        registerAccountPage.fillAllFields(this.user.signup)
         registerAccountPage.agreeCheckBox()
         registerAccountPage.continueButton()
-    })
-
-    it('Check the account created', () => {
         accountCreatedPage.checkAccountCreated()
         accountCreatedPage.continueButton()
     })
