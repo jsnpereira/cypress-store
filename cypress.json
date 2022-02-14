@@ -1,4 +1,7 @@
 {
     "defaultCommandTimeout": 10000,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "viewportWidth": 1440,
+    "viewportHeight": 900,
+    "baseUrl": "http://opencart.abstracta.us"
 }

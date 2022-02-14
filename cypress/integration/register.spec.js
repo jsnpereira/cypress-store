@@ -1,17 +1,13 @@
-import HomePage from '../pages/homePage'
-import MenuMainPage from '../pages/menuMainPage'
-import RegisterAccountPage from '../pages/registerAccountPage'
-import AccountCreatedPage from '../pages/accountCreatedPage'
+import homePage from '../pages/homePage'
+import menuMainPage from '../pages/menuMainPage'
+import registerAccountPage from '../pages/registerAccountPage'
+import accountCreatedPage from '../pages/accountCreatedPage'
 import DataUtils from '../utils/dataUtils'
 
 describe('Create new register', ()=> {
-    var homePage = new HomePage()
-    var menuMainPage = new MenuMainPage()
-    var registerAccountPage = new RegisterAccountPage()
-    var accountCreatedPage = new AccountCreatedPage()
-
+   
     it('Launch the home page', () =>{
-      homePage.go()
+        homePage.go()
     })
 
     it('Go to new register page', () =>{

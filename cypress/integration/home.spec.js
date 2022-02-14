@@ -1,8 +1,7 @@
-import HomePage from '../pages/homePage'
+import homePage from '../pages/homePage'
 
 describe('Home page', ()=> {
     it('Launch the home page', () =>{
-        var homePage = new HomePage();
-        homePage.go()
+        homePage.go();
     })
 })

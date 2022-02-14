@@ -25,4 +25,4 @@ class RegisterAccountPage {
 
 }
 
-export default RegisterAccountPage;
+export default new RegisterAccountPage;
