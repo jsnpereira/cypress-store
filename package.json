@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "This repository I have learning the cypress from QA ninja course online",
   "main": "index.js",
-  "dependencies": {
-    "cypress": "^9.5.0"
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^9.5.0",
+    "faker": "^5.5.3"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
