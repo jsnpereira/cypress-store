@@ -37,3 +37,7 @@ npx cypress run -b chrome
 https://www.cypress.io/
 
 For github actions, access the your own repository, from repository page, click the action tab.
+
+### future we can add more the dependencies
+
+https://www.npmjs.com/package/@shelex/cypress-allure-plugin
