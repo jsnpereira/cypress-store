@@ -31,3 +31,9 @@ option browser
 ````
 npx cypress run -b chrome
 ````
+
+### Github Actions and Cypress dashboard Access
+
+https://www.cypress.io/
+
+For github actions, access the your own repository, from repository page, click the action tab.
